@@ -1,0 +1,16 @@
+    ├── header-background.jpg  (ヘッダー用)
+    ├── venue-background.jpg   (会場情報用)
+    ├── profile-groom.jpg      (新郎プロフィール用)
+    ├── profile-bride.jpg      (新婦プロフィール用)
+    └── gallery/             <-- このフォルダも作成 (推奨)
+        ├── photo-01.jpg         (ギャラリーサムネイル1)
+        ├── photo-01-large.jpg   (ギャラリー拡大用1)
+        ├── photo-02.jpg         (ギャラリーサムネイル2)
+        ├── photo-02-large.jpg   (ギャラリー拡大用2)
+        └── ...                 (他のギャラリー写真)
+
+回答送信URL
+https://docs.google.com/forms/u/0/d/e/1FAIpQLScPpdY3pFmIXaojq4lbL73JviPxagXmo5bbUMw72aypuXHwwQ/formResponse
+
+事前入力されたURL
+https://docs.google.com/forms/d/e/1FAIpQLScPpdY3pFmIXaojq4lbL73JviPxagXmo5bbUMw72aypuXHwwQ/viewform?usp=pp_url&entry.1583601145=Groom's+Guest&entry.1110458568=test&entry.2054732595=%E5%87%BA%E5%B8%AD&entry.1273953512=test@example.com&entry.1634718129=090-0909-0909&entry.685303664=test&entry.1543552436=test
