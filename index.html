@@ -8,14 +8,10 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Zen+Kaku+Gothic+New:wght@300;400;700&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Zen+Kaku+Gothic+New:wght@300;400;700&family=Cormorant+Garamond&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css">
-
     <link rel="stylesheet" href="css/style.css">
-
 </head>
 <body>
 
@@ -23,9 +19,15 @@
         <div class="spinner"></div>
     </div>
 
-    <header class="header parallax-section" id="home">
+    <header class="header" id="home">
+        <div class="header-slideshow">
+            <div class="slide" style="background-image: url('images/header-bg-1.jpg');"></div>
+            <div class="slide" style="background-image: url('images/header-bg-2.jpg');"></div>
+            <div class="slide" style="background-image: url('images/header-bg-3.jpg');"></div>
+        </div>
+        <div class="header-overlay"></div>
         <div class="header-content animated-section">
-            <h1 class="main-title">Asu & Kotono</h1>
+            <h1 class="main-title">Asu <span class="ampersand">&</span> Kotono</h1>
             <p class="sub-title">Wedding Invitation</p>
             <p class="date"><i class="fa-regular fa-calendar"></i> 2025.08.31</p>
         </div>
@@ -42,7 +44,7 @@
                 <div class="message-body">
                     <p>
                         謹啓<br>
-                        陽春の候 皆様には益々ご清祥のこととお慶び申し上げます<br><br>
+                        晩夏の候 皆様には益々ご清祥のこととお慶び申し上げます<br><br>
                         このたび 私たちは結婚式を挙げることになりました<br>
                         つきましては 日頃お世話になっております皆様に<br>
                         感謝の気持ちを込めて ささやかな披露の宴を催したく存じます<br><br>
@@ -58,10 +60,11 @@
         <div class="section-divider"></div>
 
         <section class="countdown-section content-section animated-section" id="countdown-sec">
-            <div class="container">
+             <div class="section-overlay"></div>
+            <div class="container relative-container">
                 <h2 class="section-title">Save the Date</h2>
                 <div id="countdown">
-                    <div class="countdown-item">
+                    <div class="countdown-item days-item">
                         <span id="days">00</span>
                         <p>Days</p>
                     </div>
@@ -91,7 +94,11 @@
                         </div>
                         <div class="profile-text">
                             <h3><span class="role">Groom</span>北本 明</h3>
-                            <p class="bio">まだ何も知らされていない。<br>世の中を舐め腐っている。<br>大阪万博に行ってきました。</p>
+                            <p class="bio">
+                                嫁の手料理を毎日食べられるのがタコアツ。<br>
+                                嫁と共に笑顔の絶えない家庭を築いていきます。<br>
+                                ご多用の中お集まりいただく皆様へ心より感謝。
+                            </p>
                         </div>
                     </div>
                      <div class="profile-item bride">
@@ -100,7 +107,11 @@
                         </div>
                         <div class="profile-text">
                              <h3><span class="role">Bride</span>飯島 琴乃</h3>
-                             <p class="bio">よく家で裸踊りを踊っている。<br>生意気にも年上。豪快な屁をこく。</p>
+                             <p class="bio">
+                                彼の優しさに、いつも支えられています。<br>
+                                彼の隣でたくさん笑って過ごしていきたいです。<br>
+                                皆様とこの日を迎えられることを嬉しく思います。
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -152,10 +163,20 @@
                 <h2 class="section-title">Time Schedule</h2>
                 <div class="schedule-container">
                     <div class="schedule-item">
-                        <div class="schedule-icon"><i class="fa-solid fa-church"></i></div>
+                        <div class="schedule-icon"><i class="fa-regular fa-clipboard"></i></div>
+                        <div class="schedule-text">
+                            <h3>Welcome</h3>
+                            <p>受付</p>
+                            <p class="schedule-time">12:00 ~</p>
+                        </div>
+                    </div>
+                    <div class="schedule-divider-dot"></div>
+                    <div class="schedule-item">
+                        <div class="schedule-icon"><i class="fa-solid fa-heart"></i></div>
                         <div class="schedule-text">
                             <h3>Ceremony</h3>
-                            <p>13:00 ~</p>
+                            <p>挙式</p>
+                            <p class="schedule-time">12:30 ~</p>
                         </div>
                     </div>
                     <div class="schedule-divider-dot"></div>
@@ -163,7 +184,8 @@
                         <div class="schedule-icon"><i class="fa-solid fa-utensils"></i></div>
                         <div class="schedule-text">
                             <h3>Reception</h3>
-                            <p>14:00 ~</p>
+                            <p>披露宴</p>
+                            <p class="schedule-time">13:00 ~</p>
                         </div>
                     </div>
                 </div>
@@ -177,14 +199,14 @@
                 <div class="venue-info-wrapper">
                     <div class="venue-details">
                         <h3>ストリングスホテル東京インターコンチネンタル</h3>
-                        <p><i class="fa-solid fa-location-dot"></i> 〒108-8282<br>　　東京都港区港南2丁目16番1号<br>　　品川イーストワンタワー 26-32F </p>
+                        <p><i class="fa-solid fa-location-dot"></i> 〒108-8282<br>　　東京都港区港南2丁目16番1号<br>　　品川イーストワンタワー 26F </p>
                         <p><i class="fa-solid fa-phone"></i> TEL: 03-5783-1111</p>
                         <p><i class="fa-solid fa-train-subway"></i> 品川駅より徒歩5分</p>
                         <a href="https://maps.app.goo.gl/ynMwPrShzoQqAXWo6"> Google Map <i class="fa-solid fa-arrow-up-right-from-square"></i>
                         </a>
                     </div>
                     <div class="map-container">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3242.999035978948!2d139.73813237558923!3d35.6277502726046!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188a5ae105f69f%3A0xca89ff0033f2e939!2z44K544OI44Oq44Oz44Kw44K544Ob44OG44Or5p2x5Lqs44Kk44Oz44K_44O844Kz44Oz44OB44ON44Oz44K_44Or!5e0!3m2!1sja!2sjp!4v1746208574234!5m2!1sja!2sjp" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <img src="images/02596801-1a52-4cd6-94f0-34f5daed2195.webp" alt="会場アクセスマップ" style="width: 100%; height: auto; display: block;">
                         </div>
                 </div>
             </div>
@@ -227,11 +249,11 @@
                         <div class="form-group">
                             <label for="phone">Phone Number</label>
                             <input type="tel" id="phone" name="phone"
-                                   placeholder="例: 090-1234-5678 (ハイフンあり)"
-                                   pattern="\d{2,4}-\d{2,4}-\d{4}"
+                                   placeholder="例: 09012345678"
+                                   inputmode="numeric"
                                    aria-describedby="phone-hint">
                             <small id="phone-hint" class="form-hint">
-                                ハイフン (-) を含めて市外局番から入力してください。
+                                ハイフンなしで、半角数字のみでご入力ください。
                             </small>
                         </div>
                         <div class="form-group allergy-group" style="display: none;">
@@ -259,7 +281,7 @@
             <a href="#home" class="back-to-top smooth-scroll" title="Go to top">
                 <i class="fa-solid fa-arrow-up"></i>
             </a>
-            <p class="footer-names">Asu & Kotono</p>
+            <p class="footer-names">Asu <span class="ampersand">&</span> Kotono</p>
             <p>© <span id="current-year"></span> Wedding Invitation. All rights reserved.</p>
         </div>
     </footer>
